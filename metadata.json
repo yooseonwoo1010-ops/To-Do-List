@@ -1,0 +1,6 @@
+{
+  "name": "원형 시간표 투두",
+  "description": "24시간 원형 생활계획표와 투두 리스트로 오늘의 일정과 할 일을 직관적으로 관리하는 스마트 일정 관리 앱",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
