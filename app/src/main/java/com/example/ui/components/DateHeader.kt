@@ -20,6 +20,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.ArrowForward
+import androidx.compose.material.icons.automirrored.filled.FormatListBulleted
 import androidx.compose.material.icons.filled.CalendarMonth
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.FormatListBulleted
@@ -252,7 +253,7 @@ fun DateHeader(
         // View Mode Switcher Tab
         val tabs = listOf(
             Triple(ViewMode.CIRCULAR, "원형 시간표", Icons.Default.PieChart),
-            Triple(ViewMode.LIST, "목록 리스트", Icons.Default.FormatListBulleted),
+            Triple(ViewMode.LIST, "목록 리스트", Icons.AutoMirrored.Filled.FormatListBulleted),
             Triple(ViewMode.STATS, "하루 분석", Icons.Default.QueryStats)
         )
 

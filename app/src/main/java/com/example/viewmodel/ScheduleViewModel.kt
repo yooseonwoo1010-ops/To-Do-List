@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.data.AppDatabase
 import com.example.data.ScheduleItem
 import com.example.data.ScheduleRepository
+import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -87,6 +88,7 @@ class ScheduleViewModel(application: Application) : AndroidViewModel(application
     }
 
     // Schedules for selected date
+    @OptIn(ExperimentalCoroutinesApi::class)
     val schedulesForSelectedDate: StateFlow<List<ScheduleItem>> = _selectedDate
         .flatMapLatest { date ->
             val dateStr = date.format(DateTimeFormatter.ISO_LOCAL_DATE)
